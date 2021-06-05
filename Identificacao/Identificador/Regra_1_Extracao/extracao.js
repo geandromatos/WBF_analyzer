@@ -407,7 +407,6 @@ regra_1 = function (arquivo_2, nome_arquivo, nome_raiz) {
                         //Se o 4º elemento do array existir, "obj1" o irá receber e uma nova linha é inserida no escopo reduzido 
                         if (array_identifier[3]) {
                             objeto.obj1 = array_identifier[3]
-                            console.log(objeto)
                             escopoReduzido.push(objeto)
                         }
                         //Se o 4º elemento do array não existir, "obj1" não irá receber nada e uma nova linha é inserida no escopo reduzido 
