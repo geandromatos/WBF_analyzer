@@ -8,7 +8,9 @@ Se você desejar mais detalhes sobre requisitos você pode conferir no leiame pa
 
 Bibliotecas do javascript necessárias:
 *ast-types   -> para navegar na AST
+
 *esprima     -> cria a AST 
+
 *fs          -> para salvar arquivos
 *js-beautify -> para desofuscar
 *walk        -> para andar em diretórios
