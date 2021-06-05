@@ -12,15 +12,20 @@ Bibliotecas do javascript necessárias:
 *esprima     -> cria a AST 
 
 *fs          -> para salvar arquivos
+
 *js-beautify -> para desofuscar
+
 *walk        -> para andar em diretórios
 
 Ferramenta para a visualização de gráficos e tabelas dos resultados: Notebook Jupyter
 
 Bibliotecas em python necessárias:
 *urllib3       -> para acessar o conteúdo das páginas crawladas
+
 *requests      -> para obter o conteúdo das páginas crawladas
+
 *BeautifulSoup -> para extrair códigos com tag script
+
 *lxml parser   -> suporte para o beautifulsoup
 
 LINHAS DE COMANDO PARA EXECUTAR A APLICAÇÃO #WBF_Analyser#:
