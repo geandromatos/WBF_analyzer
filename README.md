@@ -7,6 +7,7 @@ GUIA DE REQUISITOS PARA APLICAÇÃO #WBF_Analyser# FUNCIONAR:
 Se você desejar mais detalhes sobre requisitos você pode conferir no leiame para requisitos
 
 Bibliotecas do javascript necessárias:
+
 *ast-types   -> para navegar na AST
 
 *esprima     -> cria a AST 
@@ -20,6 +21,7 @@ Bibliotecas do javascript necessárias:
 Ferramenta para a visualização de gráficos e tabelas dos resultados: Notebook Jupyter
 
 Bibliotecas em python necessárias:
+
 *urllib3       -> para acessar o conteúdo das páginas crawladas
 
 *requests      -> para obter o conteúdo das páginas crawladas
