@@ -1,0 +1,3 @@
+o arquivo url_erros armazena as urls que o proceso de web crawling não conseguiu acessar. Este arquivo
+é limpo toda vez que um processo de web crawling é iniciado, para ser salvo as urls erros obtidas
+do novo processo.

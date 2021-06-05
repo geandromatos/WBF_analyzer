@@ -1,0 +1,68 @@
+ARQUITETURA DA APLICAÇÃO #WBF_Analyser#
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+Este arquivo oferece um pequeno guia da aplicação WBF_analyser,
+as três principais pastas são:
+
+**Identificacao ==> Etapa onde detecta-se o fingerprinting
+
+**Pre-processamento ==> Limpa o código do processo de ofuscação e de elementos 
+                        que não sejam da linguagem javascript
+
+**resultados ==> Armazena os resultados das análises
+
+------------------------------------------------------------------------------------------------
+
+A pasta **Identificação** possui as subpastas:
+
+**Identificador ==> Armazena as subpastas que armazenam os scripts (que dectectam 
+                    fingerprinting) e seus resultados, estas subpastas são:
+
+                    **Regra_1_Extracao      ==> Armazena o script "extracao.js" e a 
+                                                subpasta "Escopos_reduzidos", que 
+                                                armazena os resultados de "extracao.js"
+
+                    **Regra_2_Normalizacao  ==> Armazena os scripts "normalizacao.js",
+                                                "dicionarios.js" e a subpasta 
+                                                "Escopos_normalizados", que armazena 
+                                                os resultados de "normalizacao.js"
+
+                    **Regra_1_Classificacao ==> Armazena o script "classificacao.js" e a 
+                                                subpasta "Escopos_classificados", que
+                                                armazena os resultados de 
+                                                "classificacao.js"     
+
+**Parse ==> Armazena as bibliotecas que auxiliam na criação da AST(árvore abstrata 
+             sintática)
+------------------------------------------------------------------------------------------------
+A pasta **Pre-processamento** possui as subpastas:
+
+**BlocoJS  ==> Armazena os códigos limpos e desofuscados
+
+**Extracao --> Armazena os scripts que realizam o pre-processamento, são estes:
+     |          **Crawler.py
+     |          **Scraper.py
+     |          **pre-processamento.js
+     |          **tratamento_bases_1.js e tratamento_bases_2.js 
+     |
+      -------> Armezana também as subpastas:       
+                **ofuscados => Armazena os códigos ofuscados extraídos pelo Crawler.py
+                               e pelo Scraper.py
+
+                **bases_defeituosas => Armazena as subpastas que armazenam as bases 
+                                       defeituosas,são elas:
+                                        **bases_erros
+                                        **bases_grandes
+                                        **bases_sem_nada_encontrado
+
+                **urls_que_deram_erro => armazena a urls com erro no processo de web crawling              
+------------------------------------------------------------------------------------------------
+A pasta **resultados** possui as subpastas:
+
+**dicionario_ID ==> Armazena os dicionários de identificadores formados a partir
+                    dos códigos analisados
+
+**graficos ==> Script python para plotar gráficos que auxiliam na análise dos dados 
+
+**lixao ==> Armazena casos descartados pela detecção de fingerprinting
+
+**risco_final_sites ==> Armazena os risco dos sites analisados

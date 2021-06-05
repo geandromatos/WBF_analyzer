@@ -1,0 +1,9 @@
+A pasta parse contém as bibliotecas que auxiliam na criação da AST, na desfuscação de códigos java script, em pecorrer a AST, em criar arquivos e caminhar em diretorios.
+
+----------------------------
+
+ast-types: percorrer a AST(Arvore Abstrata Sintática)
+esprima: criar a ASt(Arvore Abstrata Sintática)
+fs: criar arquivos
+js-beautify: desofuscar arquivos com extensão ".js"
+walk: caminhar em diretórios
