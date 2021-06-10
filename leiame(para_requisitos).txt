@@ -1,4 +1,4 @@
-GUIA DE REQUISITOS PARA APLICAÇÃO #WBF_Analyser# FUNCIONAR:
+GUIA DE REQUISITOS PARA APLICAÇÃO #WBF_Analyzer# FUNCIONAR:
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 EDITOR DE CÓDIGO FONTE
 ----------------------
