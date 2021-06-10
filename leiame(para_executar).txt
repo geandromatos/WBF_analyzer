@@ -1,6 +1,17 @@
 LINHAS DE COMANDO PARA EXECUTAR A APLICAÇÃO #WBF_Analyser#:
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+-----------------------------------------------------------
+Observação: Os comandos aqui descritos são para serem executados via prompt de comando do Windows.
+A aplicação foi testada em uma máquina Windows 10 100% atualizada com 90 Gigabyte de ram 
+O VsCode (versão 1.55.1) da microsoft foi utlizado como ambiente de desenvolvimento
+o Node.js versão 12.18.3 foi utilizado para executar os códigos de JavaScript via prompt
+A aplicação pode ser executada em linux, se os requistos de instalação forem satisfeitos, porém como
+não testamos nesse ambiente não sabemos que dependências podem ser requisitadas pelo linux para a instalação
+do VsCode ou do Node.js a execução via console também será diferente, pois o prompt é uma interface de terminal exclusiva do Windows.
 
+*É importante também que as configurações de variáveis de ambiente do usuários estejam configuradas corretamente para o Node e para o Python
+
+-----------------------------------------------------------
 Inicialmente é necessário que a pasta "WBF_Analyser" seja salva em uma pasta raiz, 
 onde se possa passar o seguinte caminho relativo: 
 
