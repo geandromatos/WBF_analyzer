@@ -1,6 +1,6 @@
-ARQUITETURA DA APLICAÇÃO #WBF_Analyser#
+ARQUITETURA DA APLICAÇÃO #WBF_Analyzer#
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
-Este arquivo oferece um pequeno guia da aplicação WBF_analyser,
+Este arquivo oferece um pequeno guia da aplicação WBF_analyzer,
 as três principais pastas são:
 
 **Identificacao ==> Etapa onde detecta-se o fingerprinting
