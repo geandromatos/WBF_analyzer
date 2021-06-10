@@ -1,4 +1,4 @@
-LINHAS DE COMANDO PARA EXECUTAR A APLICAÇÃO #WBF_Analyser#:
+LINHAS DE COMANDO PARA EXECUTAR A APLICAÇÃO #WBF_Analyzer#:
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 -----------------------------------------------------------
 Observação: Os comandos aqui descritos são para serem executados via prompt de comando do Windows.
@@ -12,15 +12,15 @@ do VsCode ou do Node.js a execução via console também será diferente, pois o
 *É importante também que as configurações de variáveis de ambiente do usuários estejam configuradas corretamente para o Node e para o Python
 
 -----------------------------------------------------------
-Inicialmente é necessário que a pasta "WBF_Analyser" seja salva em uma pasta raiz, 
+Inicialmente é necessário que a pasta "WBF_Analyzer" seja salva em uma pasta raiz, 
 onde se possa passar o seguinte caminho relativo: 
 
-"/WBF_Analyser/../"
+"/WBF_Analyzer/../"
 
-Obs: se ao baixar do github o nome da pasta principal for alterado para WBF_analyser-master, o nome da pasta principal deve ser renomeado
-para o seu nome normal, ou seja, WBF_analyser.
+Obs: se ao baixar do github o nome da pasta principal for alterado para WBF_analyzer-master, o nome da pasta principal deve ser renomeado
+para o seu nome normal, ou seja, WBF_analyzer.
 
-A aplicação WBF_Analyser foi feita para ser executada via prompt usando comandos 
+A aplicação WBF_Analyzer foi feita para ser executada via prompt usando comandos 
 do terminal do windows
 
 Após isso, existem 3 situações que podem ser executadas:
@@ -33,7 +33,7 @@ Após isso, existem 3 situações que podem ser executadas:
 de apenas 1 site e apartir disso obter vários códigos extraídos é necessário usar o 
 comando:
 
-"/WBF_Analyser/Pre-processamento/Extracao>py Crawler.py"
+"/WBF_Analyzer/Pre-processamento/Extracao>py Crawler.py"
 
 Depois de passar este comando para o prompt, o terminal exibirá uma mensagem pedindo
 para o usuário inserir a URL do site que deseja-se crawlar, como:
@@ -43,7 +43,7 @@ Insira uma URL: https://www.ufam.edu.br
 Após isso, os blocos js ofuscados extraídos do site crawlado é salvo na pasta ofuscados,
 e então passa-se o comando para o prompt:
 
-"/WBF_Analyser/Pre-processamento/Extracao>node desofuscacao.py"
+"/WBF_Analyzer/Pre-processamento/Extracao>node desofuscacao.py"
 
 Para realizar os tratamentos restantes
 ------------------------------------------------------------------------------------------------
@@ -51,7 +51,7 @@ Para realizar os tratamentos restantes
 passar várias URLs e apartir disso obter vários códigos extraídos das páginas principais dos sites é necessário usar o 
 comando:
 
-"/WBF_Analyser/Pre-processamento/Extracao>py Scraper.py"
+"/WBF_Analyzer/Pre-processamento/Extracao>py Scraper.py"
 
 Depois de passar este comando para o prompt, o terminal exibirá uma mensagem pedindo
 para o usuário inserir as URLs dos sites que deseja-se crawlar, como:
@@ -64,7 +64,7 @@ Insira uma URL: https://www.ufam.edu.br
 Após isso, os blocos js ofuscados extraídos do site crawlado é salvo na pasta ofuscados,
 e então passa-se o comando para o prompt:
 
-"/WBF_Analyser/Pre-processamento/Extracao/node desofuscacao.py"
+"/WBF_Analyzer/Pre-processamento/Extracao/node desofuscacao.py"
 
 Para realizar os tratamentos restantes
 ------------------------------------------------------------------------------------------------
@@ -72,7 +72,7 @@ Para realizar os tratamentos restantes
 o caminho para uma pasta onde existem vários códigos a serem analisados, é necessário
 usar o comando:
 
-"/WBF_Analyser/Pre-processamento/Extracao>node pre-processamento.js"
+"/WBF_Analyzer/Pre-processamento/Extracao>node pre-processamento.js"
 
 Depois de passar este comando para o prompt, o terminal exibirá uma mensagem pedindo
 para o usuário inserir o caminho para a base, como:
