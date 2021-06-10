@@ -1,7 +1,9 @@
 Durante as análises das bases de dados foram encontrados determinados problemas que exigiam soluções
 rápidas, para isso foram desenvolvidos scripts que não fazem parte da arquitetura oficial da aplicação 
 WBF_analyzer, são estes:
-    *tira_tres_pontos.js e verificador_erro_2.js  -> servem para tirar tokens que impedem a AST de ser gerada
+    *tira_tres_pontos.js -> tira o token "..."
+    *verificador_erro_2.js  -> Trata casos em que aparecem chamadas de objetos incompletas como "zin. " e objetos sem chave com valor 0 como "  : 0,"
     *unidor_de_arquivos.py -> serve para formar um blocoJS que possui vários arquivos de uma base
     *verificador_erro.js -> serve para filtrar os arquivos que possuem erros que impedem a AST de ser gerada
 
+*OBS: Se for usado o processo de web crawling e e a árvore não estiver sendo gerada, o código precisa ser verificado pela função verifica erro
