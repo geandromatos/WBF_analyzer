@@ -17,19 +17,15 @@ A pasta **Identificação** possui as subpastas:
 **Identificador ==> Armazena as subpastas que armazenam os scripts (que dectectam 
                     fingerprinting) e seus resultados, estas subpastas são:
 
-                    **Regra_1_Extracao      ==> Armazena o script "extracao.js" e a 
-                                                subpasta "Escopos_reduzidos", que 
-                                                armazena os resultados de "extracao.js"
+                    **Regra_1_Extracao      ==> Armazena o script "extracao.js" que extrai os termos da AST e armazena no escopo reduzido e a 
+                                                subpasta "Escopos_reduzidos", que armazena os resultados de "extracao.js"
 
-                    **Regra_2_Normalizacao  ==> Armazena os scripts "normalizacao.js",
-                                                "dicionarios.js" e a subpasta 
-                                                "Escopos_normalizados", que armazena 
-                                                os resultados de "normalizacao.js"
+                    **Regra_2_Normalizacao  ==> Armazena os scripts "normalizacao.js" que detecta as chamdas de web fingerprinting no escopo reduzido,
+                                                "dicionarios.js" que armazena os dicionários que a normalização usa para detectar as chamadas de web fingerprinting e
+                                                a subpasta "Escopos_normalizados", que armazena os resultados de "normalizacao.js"
 
-                    **Regra_1_Classificacao ==> Armazena o script "classificacao.js" e a 
-                                                subpasta "Escopos_classificados", que
-                                                armazena os resultados de 
-                                                "classificacao.js"     
+                    **Regra_1_Classificacao ==> Armazena o script "classificacao.js" que classifica em níveis alto, médio e baixo as páginas analisadas e a 
+                                                subpasta "Escopos_classificados", que armazena os resultados de "classificacao.js"     
 
 **Parse ==> Armazena as bibliotecas que auxiliam na criação da AST(árvore abstrata 
              sintática)
@@ -39,10 +35,16 @@ A pasta **Pre-processamento** possui as subpastas:
 **BlocoJS  ==> Armazena os códigos limpos e desofuscados
 
 **Extracao --> Armazena os scripts que realizam o pre-processamento, são estes:
-     |          **Crawler.py
-     |          **Scraper.py
-     |          **pre-processamento.js
-     |          **tratamento_bases_1.js e tratamento_bases_2.js 
+     |          Para bases externas:
+     |          **pre-processamento.js ==> lê o caminho da base que deseja-se processar
+     |          **tratamento_bases_1.js ==> retira elementos desconhecidos para a linguagem javascript
+     |          **tratamento_bases_2.js ==> retira tags script
+     |
+     |          Para código baixados por meio do processo de web crawling:
+     |          **Crawler.py ==> realiza o processo de web crawling extraindo a página principal e as dependências do site
+     |          **Scraper.py ==> realiza o processo de web crawling extraindo apenas a página principal do site
+     |          **desofuscacao.js ==> desofusca o código baixado por meio do processo de web crawling 
+     |          **geckodriver.log(opcional) ==> requisito para usar a biblioteca selenium 
      |
       -------> Armezana também as subpastas:       
                 **ofuscados => Armazena os códigos ofuscados extraídos pelo Crawler.py
@@ -58,6 +60,8 @@ A pasta **Pre-processamento** possui as subpastas:
 ------------------------------------------------------------------------------------------------
 A pasta **resultados** possui as subpastas:
 
+**bases_resultados ==> Armazena os gráficos gerados pelo notebook jupiter para análise de bases
+
 **dicionario_ID ==> Armazena os dicionários de identificadores formados a partir
                     dos códigos analisados
 
@@ -65,4 +69,6 @@ A pasta **resultados** possui as subpastas:
 
 **lixao ==> Armazena casos descartados pela detecção de fingerprinting
 
-**risco_final_sites ==> Armazena os risco dos sites analisados
+**risco_temp ==> Armazena os risco dos sites analisados
+
+**sites_independentes_resultados ==> Armazena os gráficos gerados pelo notebook jupiter para análise de sites
