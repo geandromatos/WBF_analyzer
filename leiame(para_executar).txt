@@ -34,7 +34,7 @@ e então passa-se o comando para o prompt:
 
 "/WBF_Analyser/Pre-processamento/Extracao>node desofuscacao.py"
 
-Para realizar e os tratamentos restantes
+Para realizar os tratamentos restantes
 ------------------------------------------------------------------------------------------------
 ***Situação 2*** ==>  Caso o usuário deseje passar uma lista de sites, ou seja, 
 passar várias URLs e apartir disso obter vários códigos extraídos das páginas principais dos sites é necessário usar o 
@@ -55,7 +55,7 @@ e então passa-se o comando para o prompt:
 
 "/WBF_Analyser/Pre-processamento/Extracao/node desofuscacao.py"
 
-Para realizar e os tratamentos restantes
+Para realizar os tratamentos restantes
 ------------------------------------------------------------------------------------------------
 ***Situação 3*** Caso o usuário deseje passar um caminho para uma base, ou seja, passar
 o caminho para uma pasta onde existem vários códigos a serem analisados, é necessário
