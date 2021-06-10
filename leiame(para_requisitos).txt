@@ -17,6 +17,12 @@ Bibliotecas necessárias:
 *js-beautify -> para desofuscar
 *walk        -> para andar em diretórios
 
+OBS: É necessário que estas bibliotecas sejam baixadas na pasta principal WBF_analyzer,
+     como no exemplo abaixo:
+
+     EX: /WBF_analyzer>npm install fs
+
+     Assim a pasta node modules será criada automaticamente criada no local certo
 
 EXECUTANDO CÓDIGOS PYTHON
 -------------------------
